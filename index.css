@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'CBNUJIKJI';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/CBNUJIKJI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body, h1 {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    background-color: gray;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 1;
+
+}
+
+nav a {
+    font-family: 'CBNUJIKJI';
+    font-size: 50px;
+    color: #FFF;
+}
+
+.page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+}
+
+section#main_1 .page {
+    background-color: black;
+}
+
+
+
+#DST {
+    top : 0; 
+    left : 0; 
+    bottom : 0; 
+    right : 0; 
+    background-position: center;
+    background-size: cover;
+    position:absolute; 
+    margin:auto;
+    z-index: 1;
+}
+
+.light {
+    top : 0;
+    left : 0;
+    bottom : 0; 
+    right : 0;
+    margin: auto;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-color: rgb(117, 90, 0);
+    border-radius: 100vh;
+    opacity: 0.3;
+
+}
