@@ -14,16 +14,24 @@ body, h1 {
 
 nav {
     position: fixed;
-    background-color: gray;
+    background-color: transparent;
     width: 100%;
-    opacity: 0.5;
     z-index: 1;
+    display: flex;
+}
 
+nav li{
+    text-align: right;
+}
+
+nav img {
+    width: 100px;
+    height: 100px;
 }
 
 nav a {
     font-family: 'CBNUJIKJI';
-    font-size: 50px;
+    font-size: 25px;
     color: #FFF;
 }
 
@@ -34,11 +42,6 @@ nav a {
 
 }
 
-section#main_1 .page {
-    background-color: black;
-}
-
-
 
 #DST {
     top : 0; 
@@ -47,22 +50,42 @@ section#main_1 .page {
     right : 0; 
     background-position: center;
     background-size: cover;
-    position:absolute; 
+    position:absolute;
     margin:auto;
     z-index: 1;
 }
 
-.light {
-    top : 0;
+#DS {
+    top : 0; 
     left : 0;
-    bottom : 0; 
-    right : 0;
-    margin: auto;
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    background-color: rgb(117, 90, 0);
-    border-radius: 100vh;
-    opacity: 0.3;
+    background-position: center;
+    background-size: cover;
+    position:absolute;
+    margin:auto;
+    z-index: 1;
+}
 
+.video {
+    height: 100vh;
+}
+
+.video_box {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%
+    
+}
+
+.video_box video {
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.8;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
